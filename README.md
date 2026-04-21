@@ -2,7 +2,7 @@
 
 ### Ett grupprojekt som jag kopierat till eget repo
 
-![screenshot av appen](./images/Skärmbild%20NeonCinema.pngskärmbild NeonCinema.png)
+![screenshot av appen](./images/Screenshot-NeonCinema.png)
 
 Målet med uppgiften var att bygga en webbapp som liknar IMBD, där användaren ska kunna söka efter filmer, se trailers och skapa egen watchlist.
 
