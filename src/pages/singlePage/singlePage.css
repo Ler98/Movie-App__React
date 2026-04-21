@@ -1,0 +1,187 @@
+.single-page {
+  position: relative;
+  .single-movie__card {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: flex-start;
+
+    .single-movie__image-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      .single-movie__img {
+        max-width: 350px;
+        border: 1px solid var(--main-cta-color);
+        border-radius: 1rem;
+      }
+    }
+    .single-movie__text-container {
+      flex: 2;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 0.5rem;
+      .single-movie__genres {
+        display: flex;
+        gap: 1rem;
+        margin: 1rem 0;
+
+        .single-movie__genre {
+          border: 1px solid var(--main-cta-color);
+          background-color: #ff2d7d3a;
+          border-radius: 2rem;
+          padding: 0.3rem 0.5rem;
+        }
+      }
+      .single-movie__title {
+        font-size: 2rem;
+        text-shadow: 0 0 8px var(--main-cta-color);
+        padding-left: 0.5rem;
+      }
+      .single-movie__info-section {
+        display: flex;
+        gap: 2rem;
+        padding-left: 0.5rem;
+
+        .single-movie__ratings-section {
+          display: flex;
+          gap: 0.3rem;
+
+          .fa-star {
+            margin-top: 0.25rem;
+          }
+          .single-movie__ratings {
+            color: var(--yellow-accent-color);
+            font-weight: 700;
+          }
+        }
+        .single-movie__decoration {
+          color: var(--main-cta-color);
+        }
+        .single-movie__year {
+          .single-movie__year-text {
+            margin-top: 101rem;
+          }
+        }
+        .single-movie__runtime {
+          .single-movie__runtime-text {
+          }
+        }
+      }
+      .single-movie__desc {
+        border-left: 1px solid var(--main-cta-color);
+        padding-left: 1rem;
+        background-color: #ff2d7d0f;
+      }
+      .single-movie__cast-directors-container {
+        display: flex;
+        margin-top: 2rem;
+        gap: 2rem;
+        .single-movie__cast {
+          flex: 1;
+          background-color: #ff2d7d0f;
+          border-radius: 1rem;
+          padding: 1rem;
+          border: 1px solid var(--main-cta-color);
+
+          .single-movie__cast-title {
+            color: var(--body-text-color);
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+          }
+          .single-movie__actor {
+            padding-left: 1rem;
+          }
+        }
+        .single-movie__directors {
+          flex: 1;
+          background-color: #ff2d7d0f;
+          border: 1px solid var(--main-cta-color);
+          border-radius: 1rem;
+          padding: 1rem;
+
+          .single-movie__directors-title {
+            color: var(--body-text-color);
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+          }
+          .single-movie__director {
+            padding-left: 1rem;
+          }
+        }
+      }
+      .single-page__button-container {
+        display: block;
+        margin: 0 auto;
+        margin-top: 2rem;
+        .single-page-button {
+          background-color: var(--main-cta-color);
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.single-movie__icon {
+  margin-bottom: -0.25rem;
+  color: var(--main-cta-color);
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .single-page {
+    .single-movie__card {
+      flex-direction: column;
+      align-items: center;
+
+      .single-movie__image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .single-movie__img {
+          max-width: 100%;
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .single-movie__text-container {
+        width: 100%;
+
+        .single-movie__title {
+          font-size: 1.5rem;
+        }
+
+        .single-movie__info-section {
+          gap: 1rem;
+          flex-wrap: wrap;
+        }
+
+        .single-movie__genres {
+          flex-wrap: wrap;
+          gap: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .single-page {
+    .single-movie__card {
+      .single-movie__text-container {
+        .single-movie__title {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+  .single-movie__cast-directors-container {
+    flex-direction: column;
+  }
+}

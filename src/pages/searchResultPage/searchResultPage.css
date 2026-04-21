@@ -1,0 +1,28 @@
+.search-result {
+  .search-result__title {
+    margin-top: 3rem;
+    text-shadow: 0 0 8px var(--main-cta-color);
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  .search-result__sub-title {
+    margin-bottom: 3rem;
+    color: var(--body-text-color);
+
+    .search-result__length {
+      color: var(--main-cta-color);
+    }
+  }
+
+  .search-result__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    row-gap: 3rem;
+    column-gap: 2rem;
+
+    .search-result__item {
+      height: 100%;
+    }
+  }
+}

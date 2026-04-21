@@ -1,0 +1,143 @@
+.carousel__wrapper {
+  position: relative;
+  border-bottom: 2.5px solid;
+  border-image: linear-gradient(
+      to right,
+      transparent,
+      var(--main-cta-color),
+      transparent
+    )
+    1;
+  margin-bottom: 5rem;
+}
+
+.card__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.card__container {
+  height: 100%;
+}
+
+.card__background {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin: 0rem 0rem 0rem 3.5rem;
+}
+
+.card__title {
+  color: white;
+  font-size: 40px;
+  text-shadow: 0 0 20px rgba(255, 0, 230, 8);
+}
+
+.card__info-section {
+  display: flex;
+  gap: 1.5rem;
+  margin: 0.2rem 0rem 1.2rem 0rem;
+}
+
+.card__icon-section {
+  display: flex;
+  align-items: center;
+}
+
+.fa-diamond {
+  color: var(--main-cta-color);
+  font-size: 0.4rem;
+  text-align: center;
+}
+
+.card__rating-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card__rating {
+  color: var(--yellow-accent-color);
+}
+
+.card__button {
+  color: white;
+  background-color: rgb(201, 5, 145);
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  box-shadow: 0 0px 30px rgba(255, 71, 237, 0.4);
+  width: 40%;
+  margin: 2rem 0rem 0rem 0rem;
+  cursor: pointer;
+}
+
+.card__button:hover {
+  box-shadow: 0 0px 40px rgba(255, 71, 237, 12);
+}
+
+.fa-play {
+  color: white;
+  margin: 0rem 0.5rem;
+}
+
+/* ------Pilar i carousel */
+.mantine-focus-auto {
+  background-color: rgb(61, 61, 61);
+  color: white;
+}
+
+.mantine-focus-auto:hover {
+  border: solid var(--main-cta-color) 0.01rem;
+  box-shadow: 0 10px 30px rgba(255, 0, 230, 0.4);
+  background-color: rgba(255, 0, 230, 0.1);
+  color: var(--main-cta-color);
+}
+
+@media (max-width: 768px) {
+  .card__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card__text-section {
+    margin: 0 1rem;
+  }
+
+  .card__title {
+    font-size: 28px;
+  }
+
+  .card__button {
+    width: auto;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card__title {
+    font-size: 22px;
+  }
+
+  .card__info-section {
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+}
+
+.mantine-VisuallyHidden-root {
+  visibility: hidden;
+}
